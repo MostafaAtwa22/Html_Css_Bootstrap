@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Design One</title>
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">DesingOne <span>Inc.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Company</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Programming</a></li>
+                            <li><a class="dropdown-item" href="#">Web hosting</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Desktop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start Carousel -->
+    <div id="myslide" class="carousel carousel-dark carousel-fade slide">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myslide" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"
+            style="background-color: red;"></button>
+            <button type="button" data-bs-target="#myslide" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: red;"></button>
+            <button type="button" data-bs-target="#myslide" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: red;"></button>
+            <button type="button" data-bs-target="#myslide" data-bs-slide-to="3" aria-label="Slide 4" style="background-color: red;"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="4000">
+                <img src="../images/Car1.jpg" class="d-block w-100" alt="First slide">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/Car2.webp" class="d-block w-100" alt="Second slide">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/Car3.webp" class="d-block w-100" alt="Third slide">
+            </div>
+            <div class="carousel-item" data-bs-interval="4000">
+                <img src="../images/Car4.jpg" class="d-block w-100" alt="Fourth slide">
+            </div>
+        </div>
+
+        <!-- White arrow controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myslide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: red;"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myslide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: red;"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- End Carousel -->
+
+    <!-- Start About Section -->
+    <section class="about text-center">
+        <div class="container">
+            <h1>Meet our new template <span>DesignOne Inc.</span></h1>
+            <p class="lead">Hello let new introduce our new template DesignOne Inc. Created with all love using <strong>Bootrstrap 5</strong></p>
+        </div>
+    </section>
+    <!-- End About Section -->
+    
+    <!-- Start Features Section -->
+    <section class="features text-center">
+        <div class="container">
+            <h1>Our Features</h1>
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="fa fa-object-group"></i>
+                        <h3>100% Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam at eum. Corrupti hic fugit sunt! Repellendus quis aperiam recusandae quaerat consequuntur, molestiae ut illo eum eveniet natus totam impedit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="fa fa-search-plus"></i>
+                        <h3>100% Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam at eum. Corrupti hic fugit sunt! Repellendus quis aperiam recusandae quaerat consequuntur, molestiae ut illo eum eveniet natus totam impedit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        <h3>100% Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam at eum. Corrupti hic fugit sunt! Repellendus quis aperiam recusandae quaerat consequuntur, molestiae ut illo eum eveniet natus totam impedit.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="feat">
+                        <i class="fa fa-cog"></i>
+                        <h3>100% Responsive</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur quisquam at eum. Corrupti hic fugit sunt! Repellendus quis aperiam recusandae quaerat consequuntur, molestiae ut illo eum eveniet natus totam impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Features Section -->
+    <div class="testimonials text-center">
+        <div class="container">
+            <h1>What our Clients say ?</h1>
+            <!-- Start Carousel -->
+            <div id="mytestimonials" class="carousel carousel-dark carousel-fade slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestias rem libero, officiis, debitis quaerat iure nihil, commodi suscipit voluptatum ab facilis porro quidem asperiores. Quos excepturi explicabo a perspiciatis.</p>
+                        <span>Ahmed Ali</span>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <p class="lead">Lorm ipsum, dolor sit amlit.  autem rem error dolor repellendus iure illo tempore impedit, aliquam commodi, eligendi nisi ipsum saepe laboriosam vel ipsam labore deserunt. Nostrum consequuntur dolore cum eaque amet, maxime esse laborum ducimus. Quia incidunt accusantium quos sint quod!</p>
+                        <span>Mostafa Atwa</span>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat velit aspernatur dolores impedit quam, repellat, minus eum necessitatibus earum voluptas dignissimos. Beatae minus illum odit voluptate similique consequatur libero, quam pariatur quae dolor hic fugit veniam non natus sed odio.</p>
+                        <span>Mohamed Elsharkawy</span>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum. Doloribus, cumque. Quisquam, voluptatum.</p>
+                        <span>Ahmed Ibrahim</span>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mytestimonials" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"
+                    style="background-color: red;">
+                    <img src="../images/avatar-01.png" alt="">
+                </button>
+                    <button type="button" data-bs-target="#mytestimonials" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: red;">
+                        <img src="../images/avatar-02.png" alt="">
+                    </button>
+                    <button type="button" data-bs-target="#mytestimonials" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: red;">
+                        <img src="../images/avatar-03.png" alt="">
+                    </button>
+                    <button type="button" data-bs-target="#mytestimonials" data-bs-slide-to="3" aria-label="Slide 4" style="background-color: red;">
+                        <img src="../images/avatar-04.png" alt="">
+                    </button>
+                </div>
+            </div>
+            <!-- End Carousel -->
+        </div>
+    </div>
+    <!-- Start Testimonials Section -->
+    <!-- End Testimonials Section -->
+    <!-- Popper.js and Bootstrap JS via CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+</html>
