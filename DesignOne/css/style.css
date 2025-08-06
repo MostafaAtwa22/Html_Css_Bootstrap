@@ -259,3 +259,17 @@ body {
     color: var(--active-color);
 }
 /* End Our Team */
+/* Start Subscribe */
+.subscribe {
+    position: relative;
+    padding: 100px 0;
+}
+.subscribe h1 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #888;
+}
+.subscribe p {
+    margin-bottom: 40px;
+}
+/* End Subscribe */
