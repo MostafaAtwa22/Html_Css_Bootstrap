@@ -219,7 +219,6 @@ body {
     position: relative;
     padding: 100px 0;
     background: url(../images/team-background1.jpg) no-repeat center center fixed;
-    .statistics .sta
     width: 100%;
     color: white;
 }
@@ -314,3 +313,26 @@ body {
     font-size: 18px;
 }
 /* End statistics */
+/* Start Our Skills */
+.skills {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.skills h1 {
+    margin-bottom: 50px;
+}
+.skills .skill-progress .progress {
+    height: 40px;
+    margin-bottom: 25px;
+}
+.skills .skill-progress .progress div {
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    text-indent: 20px;
+}
+.skills .skill-info h3 {
+    margin-top: 0;
+}
+/* End Our Skills */
