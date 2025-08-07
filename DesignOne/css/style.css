@@ -219,6 +219,7 @@ body {
     position: relative;
     padding: 100px 0;
     background: url(../images/team-background1.jpg) no-repeat center center fixed;
+    .statistics .sta
     width: 100%;
     color: white;
 }
@@ -273,3 +274,43 @@ body {
     margin-bottom: 40px;
 }
 /* End Subscribe */
+/* Start statistics */
+.statistics {
+    background: url("../images/statistics.webp") no-repeat fixed center center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+}
+.statistics::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.statistics .container {
+    position: relative;
+    color: #888;
+}
+.statistics h1 {
+    margin-bottom: 50px;
+    color: white;
+}
+.statistics .stat {
+    margin-bottom: 40px;
+}
+.statistics .stat:hover {
+    color: #fff;
+}
+.statistics .stat p {
+    font-weight: bold;
+    font-size: 50px;
+    margin: 20px 0;
+}
+.statistics .stat span {
+    font-size: 18px;
+}
+/* End statistics */
