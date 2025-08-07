@@ -384,3 +384,24 @@ body {
     color: #888;
 } 
 /* End Contact us */
+/* Start Our Clients */
+.our-clients {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    position: relative;
+    background-color: #f8f9fa;
+}
+.our-clients h1 {
+    margin-bottom: 50px;
+}
+.our-clients img {
+    opacity: 0.4;
+    filter: opacity(40);
+    margin-bottom: 40px;
+    transition: 0.7s;
+}
+.our-clients img:hover {
+    opacity: 1;
+    filter: opacity(100);
+}
+/* End Our Clients */
