@@ -1,22 +1,49 @@
 :root {
-    --active-color: #E41B17;
     --font-color: #BBB;
+}
+* {
+    font-family: "Cairo", sans-serif;
 }
 body {
     padding-top: 70px; 
 }
+/* start option box */
+.option-box {
+    position: fixed;
+    display: flex;
+    color: white;
+    left: 0;
+    top: 100px;
+    z-index: 9999;
+}
+.option-box .color-option {
+    background-color: #333;
+    padding: 10px;
+    width: 200px;
+    display: none;
+}   
+.option-box .color-option ul {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.option-box .color-option ul li {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.option-box .gear-check {
+    padding: 5px;
+    height: fit-content;
+    cursor: pointer;
+}
+/* end option box */
 .navbar {
     min-height: 70px;
 }
 .navbar-brand {
     font-size: 30px;
-}
-.navbar-brand span {
-    color: var(--active-color);
-}
-.navbar-nav .nav-link.active, 
-.navbar-nav .nav-link.show {
-    background-color: var(--active-color);
 }
 .navbar-nav .nav-link {
     color: var(--font-color);
@@ -36,7 +63,6 @@ body {
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
-    background-color: var(--active-color);
     color: #fff;
     padding-left: 30px;
 }
@@ -59,9 +85,6 @@ body {
     .about h1 {
         font-size: 25px;
     }
-}
-.about h1 span {
-    color: var(--active-color);
 }
 .about p.lead {
     color: #888;
@@ -117,7 +140,6 @@ body {
 .testimonials span {
     display: block;
     font-weight: bold;
-    color: var(--active-color);
     margin-top: 10px;
 }
 .testimonials .carousel-inner {
@@ -137,9 +159,6 @@ body {
     overflow: hidden;
     position: relative;
     transform: all 0.5s ease;
-}
-.testimonials .carousel-indicators button.active {
-    border: 3px solid var(--active-color);
 }
 .testimonials .carousel-indicators button img {
     max-width: 100%;
@@ -181,7 +200,6 @@ body {
     transition: 0.7s;
 }
 .price .price-box:hover p {
-    border-color: var(--active-color);
     transform: scale(1.1) rotate(360deg);
 }
 .price .price-box ul {
@@ -254,9 +272,6 @@ body {
     margin-top: 10px;
     cursor: pointer;
     transition: 0.7s;
-}
-.team .person i:hover {
-    color: var(--active-color);
 }
 /* End Our Team */
 /* Start Subscribe */
@@ -415,7 +430,6 @@ footer a:hover {
     color: white;
 }
 footer h3 {
-    color: #0895D1;
     letter-spacing: 1px;
     margin: 30px 0px 20px;
 }
@@ -456,7 +470,15 @@ footer .copyright {
     border-top: 2px solid #AAA;
 }
 footer .copyright span {
-    color: var(--active-color);
     font-weight: bold;
 }
 /* End footer */
+/* Start Media query  */
+@media (max-width: 767px) {
+    .navbar-nav .nav-link {
+        padding-left: 10px !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+/* End media Query  */

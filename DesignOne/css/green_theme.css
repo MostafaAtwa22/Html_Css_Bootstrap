@@ -1,0 +1,32 @@
+:root {
+    --active-color: #4bc4af
+}
+
+/* Text Color Styles */
+.navbar-brand span,
+.about h1 span,
+.testimonials span,
+.team .person i:hover,
+footer h3,
+footer .copyright span {
+    color: var(--active-color);
+}
+
+/* Background Color Styles */
+.option-box .gear-check,
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.show,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: var(--active-color);
+}
+
+/* Border Styles */
+.option-box .color-option,
+.testimonials .carousel-indicators button.active {
+    border: 4px solid var(--active-color);
+}
+.price .price-box:hover p {
+    border-color: var(--active-color);
+}
+/* End Default Themes */
