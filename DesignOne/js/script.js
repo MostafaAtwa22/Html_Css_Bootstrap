@@ -17,3 +17,16 @@ $(document).ready(function() {
         $('link[href*=theme]').attr('href', $(this).attr('data-value'));
     })
 });
+
+// loading screen
+$(window).on('load', function() {
+
+    $('.loading-overlay .loader').fadeOut(4000, function() {
+        $(this).parent().fadeOut(2000, function() {
+            // remove the parent from the dom tree 
+            $(this).remove();
+            // make the scroll for the body
+            $('body').css('overflow', 'auto');
+        });
+    });
+});
