@@ -18,7 +18,8 @@ footer .copyright span {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show,
 .dropdown-menu > li > a:hover,
-.dropdown-menu > li > a:focus {
+.dropdown-menu > li > a:focus,
+button.scroll-to-top {
     background-color: var(--active-color);
 }
 

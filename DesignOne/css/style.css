@@ -531,3 +531,17 @@ footer .copyright span {
     40% { box-shadow: 0 2.5em 0 0 }
 }
 /* end Overlay */
+/* start scroll to top */
+button.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 1px solid #333;
+    color: white;
+    z-index: 9998;
+    text-align: center;
+    padding: 5px 10px;
+    font-size: 20px;
+    display: none;
+}
+/* End scroll to top */

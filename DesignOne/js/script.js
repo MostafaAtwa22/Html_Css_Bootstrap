@@ -15,13 +15,25 @@ $(document).ready(function() {
 
     colorLi.click(function() {
         $('link[href*=theme]').attr('href', $(this).attr('data-value'));
+    });
+
+    var scrollBtn = $('.scroll-to-top');
+    var windowHeight = $(window).height();
+    $(window).scroll(function() {
+        ($(this).scrollTop() >= windowHeight) ? scrollBtn.show() :  scrollBtn.hide();
+    })
+
+    // go to the top
+    scrollBtn.on('click', function() {
+        $('html,body').animate({
+            scrollTop: 0
+        }, 600)
     })
 });
 
 // loading screen
 $(window).on('load', function() {
-
-    $('.loading-overlay .loader').fadeOut(4000, function() {
+    $('.loading-overlay .loader').fadeOut(2000, function() {
         $(this).parent().fadeOut(2000, function() {
             // remove the parent from the dom tree 
             $(this).remove();
