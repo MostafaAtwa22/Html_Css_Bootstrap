@@ -1,0 +1,35 @@
+/* Start About */
+.breadcrumb-holder {
+    background-color: #f8f9fa;
+}
+.breadcrumb {
+    padding: 15px 0;
+    margin: 0;
+}
+.about-us {
+    padding: 80px 0;
+}
+.about-us h1 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: -3px;
+}
+.about-features  {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+.about-ceo {
+    padding-top: 50px;
+}
+/* End About */
+/* Start FAQ */
+.faq {
+    padding: 70px 0;
+}
+.faq-questions {
+    padding: 70px 0;
+    background-color: #f8f9fa;
+}
+
+/* End FAQ */

@@ -74,7 +74,9 @@ body {
 .carousel-control-next {
     color: white;
 }
-
+.carousel-inner .carousel-item img {
+    width: 100%;
+}
 /* Start About */
 .about {
     padding: 100px 0;

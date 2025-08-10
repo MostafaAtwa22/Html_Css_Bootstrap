@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Design One</title>
+
+    <!-- Bootstrap 5 CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/default_theme.css">
+    <link rel="stylesheet" href="../css/hover.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- cario font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body class="overflow-auto">
+    <!-- Start Tool box  -->
+    <div class="option-box">
+        <div class="color-option">
+            <h4>Color option</h4>
+            <ul class="list-unstyled">
+                <li data-value="../css/default_theme"></li>
+                <li data-value="../css//pink_theme.css"></li>
+                <li data-value="../css/blue_theme.css"></li>
+                <li data-value="../css/green_theme.css"></li>
+                <li data-value="../css/orange_theme.css"></li>
+            </ul>
+        </div>
+        <i class="fa fa-gear fa-3x gear-check hvr-push"></i>
+    </div>
+    <!-- End Tool box  -->
+    <!-- Start Nav -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand hvr-pop" href="#">DesingOne <span>Inc.</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                    data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" 
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="faq.html">FAQ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" 
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Programming</a></li>
+                            <li><a class="dropdown-item" href="#">Web hosting</a></li>
+                            <li><a class="dropdown-item" href="#">Mobile Apps</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Desktop</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Nav -->
+    <!-- Start Breadcrumb -->
+    <div class="breadcrumb-holder text-center">
+        <div class="container">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item" aria-current="page">About Us</li>
+                <li class="breadcrumb-item active" aria-current="page">FAQ</li>
+            </ol>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+    <!-- Start FAQ -->
+    <div class="faq text-center">
+        <div class="container">
+            <h1>Frequently asked Questions</h1>
+            <hr>
+            <p class="lear">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quas veritatis reprehenderit facilis cupiditate nobis sequi molestiae, dolorem odit, autem illo error, iste delectus nostrum quisquam labore deleniti consequuntur! Quo?</p>
+        </div>
+    </div>
+    <!-- End FAQ -->
+    <!-- Start FAQ Section -->
+    <div class="faq-questions my-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Frequently Asked Questions</h2>
+        <div class="accordion" id="faqAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                What services does DesignOne Inc. offer?
+            </button>
+            </h2>
+            <div id="faqCollapseOne" class="accordion-collapse collapse show"
+                aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                We specialize in web development, mobile applications, and digital solutions tailored to your business needs.
+            </div>
+            </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                How can I contact your support team?
+            </button>
+            </h2>
+            <div id="faqCollapseTwo" class="accordion-collapse collapse"
+                aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                You can reach us through our <strong>Contact Us</strong> page or email us directly for 24/7 support.
+            </div>
+            </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faqHeadingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#faqCollapseThree" aria-expanded="false" aria-controls="faqCollapseThree">
+                Do you provide custom design solutions?
+            </button>
+            </h2>
+            <div id="faqCollapseThree" class="accordion-collapse collapse"
+                aria-labelledby="faqHeadingThree" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+                Yes, our creative design team delivers user-centric, custom solutions to ensure the best digital experience for your clients.
+            </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </div>
+    <!-- End FAQ Section -->
+
+    <!-- Start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <h3>Sitemap</h3>
+                    <ul class="list-unstyled three-columns">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li>Code</li>
+                        <li>Company</li>
+                        <li>Host</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                        <li>Our teams</li>
+                        <li>Clients</li>
+                    </ul>
+                    <ul class="list-unstyled social-list">
+                        <li><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-google fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-yahoo fa-2x"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <h3>Latest Articles</h3>
+                <div class="media">
+                    <a href="" class="pull-left">
+                        <img src="../images/article-01.webp" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Programming</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, quasi!</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <a href="" class="pull-left">
+                        <img src="../images/article-02.webp" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Programming</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, quasi!</p>
+                    </div>
+                </div>
+                <div class="media">
+                    <a href="" class="pull-left">
+                        <img src="../images/article-03.webp" alt="">
+                    </a>
+                    <div class="media-body">
+                        <h4 class="media-heading">Programming</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, quasi!</p>
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <h3>Our Awesome work</h3>
+                    <img class="img-thumbnail img-fluid" src="../images/team-01.jpg" alt="">
+                    <img class="img-thumbnail img-fluid" src="../images/team-02.jpg" alt="">
+                    <img class="img-thumbnail img-fluid" src="../images/team-03.jpg" alt="">
+                    <img class="img-thumbnail img-fluid" src="../images/team-04.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center">
+            Copyright &copy; 2025 <span>Desgin One Bootstrap 5</span>
+        </div>
+    </footer>
+    <!-- End footer -->
+    <!-- Start Scroll to top -->
+    <button class="scroll-to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+    <!-- end Scroll to top -->
+    <!-- Popper.js and Bootstrap JS via CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js" integrity="sha512-zMfrMAZYAlNClPKjN+JMuslK/B6sPM09BGvrWlW+cymmPmsUT1xJF3P4kxI3lOh9zypakSgWaTpY6vDJY/3Dig==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="../js/script.js"></script>
+</html>

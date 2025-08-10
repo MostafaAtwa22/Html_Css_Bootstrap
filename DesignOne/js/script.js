@@ -1,6 +1,9 @@
 $(document).ready(function() {
+    // nice scroll
+    $('html').niceScroll();
+
     // hide and show the option-tool
-    $('.gear-check').click(function() {
+    $('.gear-check').click(function () {
         $('.color-option').fadeToggle(300);
     });
 
@@ -19,12 +22,12 @@ $(document).ready(function() {
 
     var scrollBtn = $('.scroll-to-top');
     var windowHeight = $(window).height();
-    $(window).scroll(function() {
+    $(window).scroll(function () {
         ($(this).scrollTop() >= windowHeight) ? scrollBtn.show() :  scrollBtn.hide();
     })
 
     // go to the top
-    scrollBtn.on('click', function() {
+    scrollBtn.on('click', function () {
         $('html,body').animate({
             scrollTop: 0
         }, 600)
@@ -32,13 +35,13 @@ $(document).ready(function() {
 });
 
 // loading screen
-$(window).on('load', function() {
-    $('.loading-overlay .loader').fadeOut(2000, function() {
-        $(this).parent().fadeOut(2000, function() {
+$(window).on('load', function () {
+    $('.loading-overlay .loader').fadeOut(2000, function () {
+        // make the scroll for the body
+        $('body').css('overflow', 'auto');
+        $(this).parent().fadeOut(2000, function () {
             // remove the parent from the dom tree 
             $(this).remove();
-            // make the scroll for the body
-            $('body').css('overflow', 'auto');
         });
     });
 });
