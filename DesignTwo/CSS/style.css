@@ -4,11 +4,23 @@
     --red-color: #ff3150;
     --yellow-color: #ffc400;
     --main-transition: 0.7s;
-    --main-padding: 50px;
+    --section-background: #eff7fa;
 }
 body {
     font-family: "Roboto", sans-serif;
 }
+/* Start Global usings */
+.main-title::before {
+    content: '';
+    position: absolute;
+    width: 12   0px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px
+}
+/* End Global usings */
 /* Start Nav */
 .navbar {
     background-color: var(--dark-color);
@@ -52,3 +64,28 @@ body {
     min-height: calc(100vh - 72px);
 }
 /* End Nav */
+/* Start Services */
+.features .box {
+    transition: var(--main-transition);
+}
+.features .box:hover {
+    box-shadow: 0 0 8px 10px var(--section-background);
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    color: var(--section-background);
+    font-size: 12rem;
+}
+.features .icon-holder .icon {
+    color: var(--green-color)
+}
+.features .box h4 {
+    color: var(--yellow-color);
+}
+/* End Services */
