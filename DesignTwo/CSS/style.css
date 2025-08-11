@@ -13,7 +13,7 @@ body {
 .main-title::before {
     content: '';
     position: absolute;
-    width: 12   0px;
+    width: 120px;
     height: 2px;
     background-color: var(--green-color);
     left: 50%;
@@ -89,3 +89,34 @@ body {
     color: var(--yellow-color);
 }
 /* End Services */
+/* Start Work */
+.works {
+    background-color: var(--section-background);
+}
+.works ul li a {
+    transition: var(--main-transition);
+}
+.works ul li:not(:first-child) a:hover {
+    color: var(--green-color) !important;
+}
+.works .work-item::before {
+    content: attr(data-type);
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    top: 50%;
+    left: calc(-100% - 5px);
+    transform: translate(-50%, -50%);
+    background-color: rgb(51, 209, 204, 0.6);
+    color: white;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--main-transition);
+    font-size: 30px;
+}
+.works .work-item:hover::before {
+    left: 50%;
+}
+/* End Work */
