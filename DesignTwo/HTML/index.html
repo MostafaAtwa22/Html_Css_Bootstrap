@@ -10,10 +10,14 @@
     <!-- Css style -->
     <link rel="stylesheet" href="../CSS/bootstrap.min.css">
     <link rel="stylesheet" href="../CSS/all.min.css">
+    <link rel="stylesheet" href="../CSS/animate.min.css">
     <link rel="stylesheet" href="../CSS/style.css">
-    <title>Document</title>
+    <title>Bondi</title>
 </head>
 <body>
+    <button class="scroll-to-top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
     <nav class="navbar navbar-expand-lg sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="../Images/logo.png" alt=""></a>
@@ -52,7 +56,7 @@
             <a href="#" class="btn main-btn rounded-pill">Get started</a>
         </div>
     </div>
-    <div class="features pt-5 pb-5" id="features">
+    <div class="features pt-5 pb-5 wow animate__animated animate__fadeIn" id="features" data-wow-duration="2s" data-wow-offset="100">
         <div class="text-center">
             <div class="container">
                 <div class="main-title mt-5 mb-5 position-relative">
@@ -95,7 +99,7 @@
             </div>
         </div>
     </div>
-    <div class="works pt-5 pb-5" id="works">
+    <div class="works pt-5 pb-5 wow animate__animated animate__fadeInUp" id="works" data-wow-duration="1.5s" data-wow-delay="0.2s">
         <div class="text-center">
             <div class="container">
                 <div class="main-title mt-5 mb-5 position-relative">
@@ -158,7 +162,7 @@
             </div>
         </div>
     </div>
-    <div class="stuff pt-5 text-center">
+    <div class="stuff pt-5 text-center wow animate__animated animate__fadeInLeft" data-wow-duration="1.5s" data-wow-delay="0.3s">
         <div class="container">
             <div class="main-title mt-5 mb-5 position-relative">
                 <img src="../Images/title.png" alt="">
@@ -183,7 +187,7 @@
             </div>
         </div>
     </div>
-    <div class="team text-center pt-5 pb-5">
+    <div class="team text-center pt-5 pb-5 wow animate__animated animate__fadeInRight" data-wow-duration="1.5s" data-wow-delay="0.2s">
         <div class="container">
             <h2 class="mt-5 fw-bold">Meat the team</h2>
             <p class="lead text-black-50 mb-5">Donec rutrum congue leo eget malesuada. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Pellentesque in ipsum id orci porta dapibus. Proin eget tortor risus. Donec sollicitudin molestie malesuada.</p>
@@ -219,7 +223,7 @@
             </div>
         </div>
     </div>
-    <div class="clients pt-5 pb-5">
+    <div class="clients pt-5 pb-5 wow animate__animated animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
         <div class="container">
             <div class="row g-3">
                 <div class="col-6 col-sm-4 col-md-2">
@@ -243,14 +247,135 @@
             </div>
         </div>
     </div>   
-    <div class="project text-center pt-5 pb-5">
+    <div class="project text-center pt-5 pb-5 wow animate__animated animate__zoomIn" data-wow-duration="1.2s" data-wow-delay="0.3s">
         <div class="container">
             <h2 class="text-light fw-bold">Start Your Project Now</h2>
             <p class="lead text-white-50 mb-5">Leave your description and we start the engine.Don't worry,you can cancel anytime</p>
             <a href="#" class="btn main-btn rounded-pill text-uppercase mb-5">Start Project</a>
         </div>
     </div> 
+    <div class="blog text-center pt-5 pb-5 wow animate__animated animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.2s">
+        <div class="container">
+            <div class="main-title mt-5 mb-5 position-relative">
+                <img src="../Images/title.png" alt="">
+                <h2 class="mt-4">Read Our Blog</h2>
+                <p class="text-black-50 text-uppercase">New Stories</p>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="box bg-white overflow-hidden">
+                        <img src="../Images/blog-1.jpg" class="img-fluid" alt="">
+                        <div class="info text-start p-4">
+                            <span>Jan 17, 2022</span>
+                            <p class="fw-bold fs-4">Some Awesome Blog Title Here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="box bg-white overflow-hidden">
+                        <img src="../Images/blog-2.jpg" class="img-fluid" alt="">
+                        <div class="info text-start p-4">
+                            <span>Jan 17, 2022</span>
+                            <p class="fw-bold fs-4">Some Awesome Blog Title Here</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="box bg-white overflow-hidden">
+                        <img src="../Images/blog-3.jpg" class="img-fluid" alt="">
+                        <div class="info text-start p-4">
+                            <span>Jan 17, 2022</span>
+                            <p class="fw-bold fs-4">Some Awesome Blog Title Here</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn main-btn rounded-pill text-uppercase">More Stories</a>
+        </div>
+    </div>
+    <div class="subscribe pt-5 pb-5 text-center text-md-start wow animate__animated animate__slideInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
+        <div class="container">
+            <form class="row align-items-center">
+                <div class="col-md-5 col-lg-3 mt-3">
+                    <div class="fw-bold fs-5">Subscribe to our Newsletter:</div>
+                </div> 
+                <div class="col-md-6 col-lg-6 mt-3 mb-3">
+                    <input class="w-100 p-2 bg-transparent" type="email" placeholder="Enter your email">
+                </div>
+                <div class="col-md-6 col-lg-2 mt-3 mb-3">
+                    <button type="submit" class="btn rounded-pill text-light fw-bold">
+                        Subscribe
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="pb-5 pt-5 text-white-50 text-center text-md-start">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md6 col-sm-12">
+                    <img class="img-fluid mt-4" src="../Images/logo.png" alt="Logo">
+                    <p class="fw-bold mt-4 mb-5">Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.</p>
+                    <p class="fw-bold">Create By <span>Graphberry</span><br>&copy; 2022 <span>Bondi Inc</span></p>
+                </div>
+                <div class="col-lg-3 col-md6 col-sm-12">
+                    <h4 class="text-light fw-bold mb-4 mt-4">Links</h4>
+                    <ul class="list-unstyled">
+                        <li class="p-2">Home</li>
+                        <li class="p-2">Our Services</li>
+                        <li class="p-2">Portfolio</li>
+                        <li class="p-2">Testimonials</li>
+                        <li class="p-2">Support</li>
+                        <li class="p-2">Terms and Condition</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md6 col-sm-12">
+                    <h4 class="text-light fw-bold mb-4 mt-4">About Us</h4>
+                    <ul class="list-unstyled">
+                        <li class="p-2">Sign In</li>
+                        <li class="p-2">Register</li>
+                        <li class="p-2">About Us</li>
+                        <li class="p-2">Blog</li>
+                        <li class="p-2">Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md6 col-sm-12">
+                    <h4 class="text-light fw-bold mb-4 mt-4">Contact Us</h4>
+                    <p class="text-white-50 lh-lg">Get in touch with us via mail phone.We are waiting for your call or message</p>
+                    <a href="#" class="btn main-btn d-block rounded-pill mt-5">graphberry@gmail.com</a>
+                    <ul class="list-unstyled d-flex align-items-center mt-5 gap-3">
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-facebook-f fa-2x text-light rounded-circle"></i
+                            ></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-twitter fa-2x text-light rounded-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-instagram fa-2x text-light rounded-circle"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa-brands fa-linkedin-in fa-2x text-light rounded-circle"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="loading-overlay">
+        <span class="loader"></span>
+    </div>
 </body>
-<script src="../JS/bootstrap.bundle.min.js"></script>
+<script src="../JS/bootstrap.bundle.min.js"></script>   
 <script src="../JS/all.min.js"></script>
+<script src="../JS/wow.min.js"></script>
+<script>new WOW().init();</script>
+<script src="../JS/script.js"></script>
 </html>
