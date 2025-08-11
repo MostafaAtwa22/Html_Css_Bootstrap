@@ -257,3 +257,21 @@ footer .row div:first-child p:last-of-type span:last-child {
     }
 }
 /* End loader */
+::-webkit-scrollbar {
+    width: 20px;
+}
+/*hole bar background-color*/
+::-webkit-scrollbar-track {
+    background-color:var(--main-color);
+    box-shadow: 0 0 10px #ddd inset;
+}
+/*scroll bar color*/
+::-webkit-scrollbar-thumb {
+    background-color: var(--red-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--item-color);
+}
+::-webkit-scrollbar-corner {
+    background-color: red;
+}
