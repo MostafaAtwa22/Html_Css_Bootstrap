@@ -120,7 +120,13 @@ body {
 .works ul li a {
     transition: var(--main-transition);
 }
-.works ul li:not(:first-child) a:hover {
+.works ul li a.active {
+    color: var(--yellow-color) !important;
+    background-color: var(--red-color) !important;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+.works ul li a:hover {
     color: var(--green-color) !important;
 }
 .works .work-item::before {
